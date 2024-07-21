@@ -19,7 +19,7 @@ jobs:
         node-version: [19]
         pnpm-version: [8]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
       - uses: pnpm/action-setup@v2.2.4
@@ -64,7 +64,7 @@ jobs:
         node-version: [19]
         pnpm-version: [8]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
           repository: ${{ github.event.pull_request.head.repo.full_name }}
@@ -115,7 +115,7 @@ jobs:
         node-version: [19]
         pnpm-version: [8]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
       - uses: pnpm/action-setup@v2.2.4
@@ -151,7 +151,7 @@ jobs:
         node-version: [19]
         pnpm-version: [8]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
       - uses: pnpm/action-setup@v2.2.4
